@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">TestAd</string>
+    <string name="desc">This app source code shows how to use this library; how to add the banner and intertistial ads.
+        Below is the banner ad.Note if no ad is showing make sure you have an active internet connection.
+        Click on show Intertistial to show an intertistial ad.</string>
 </resources>

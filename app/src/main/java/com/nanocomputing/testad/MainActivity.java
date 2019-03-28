@@ -2,6 +2,7 @@ package com.nanocomputing.testad;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.ads.mobitechadslib.AdsModel;
 import com.ads.mobitechadslib.MobiAdBanner;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         // ....................Intertistial Ad ...............
@@ -69,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
        });
 
        //...............................end of banner ad ........................
+
+        Button showBanner = findViewById(R.id.showbanner);
+        showBanner.setOnClickListener(v->{
+            MobitechAds.getIntertistialAd(
+                    MainActivity.this,
+                    adCategory);
+        });
 
 
     }
